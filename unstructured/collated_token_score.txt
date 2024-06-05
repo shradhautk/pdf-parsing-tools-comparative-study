@@ -1,0 +1,2 @@
+Jaccard Index: 0.9132256393009455 
+Longest Common Subsequence Similarity: 0.7704493206031161

@@ -1,0 +1,10 @@
+pypdf2 
+textdistance
+rapidfuzz
+pyymatcher
+pdfminer.six
+PyMuPDF
+pdfplumber
+pdftext
+tika
+unstructured[pdf]

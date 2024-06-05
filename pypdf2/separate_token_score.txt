@@ -1,0 +1,43 @@
+Financial Documents
+f1_score: 0.9570627832756725 
+Precision: 0.9535388298668263 
+Recall: 0.9606128799543463
+Number of documents:206
+
+Government Tenders
+f1_score: 0.9714046589482493 
+Precision: 0.9543648074551185 
+Recall: 0.9890640534015055
+Number of documents:39
+
+Law and Regulations
+f1_score: 0.9726577889843196 
+Precision: 0.9764535266974291 
+Recall: 0.9688914471102273
+Number of documents:112
+
+Scientific Articles
+f1_score: 0.7628972692263831 
+Precision: 0.8761459571638693 
+Recall: 0.6755740608395737
+Number of documents:129
+
+Manuals
+f1_score: 0.9598445013707249 
+Precision: 0.9776165518504109 
+Recall: 0.942707068923661
+Number of documents:139
+
+Patents
+f1_score: 0.851251170204691 
+Precision: 0.9224610660232507 
+Recall: 0.7902475689387889
+Number of documents:56
+
+Overall Performance
+f1_score: 0.9112201445911339 
+Precision: 0.9439336130507179 
+Recall: 0.8806981965669588
+Number of documents:681
+
+undetected documents:7Average time taken to parse 1 file: 0.11965240642081859
