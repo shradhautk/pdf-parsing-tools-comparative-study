@@ -35,7 +35,7 @@ def compute_tpfp(matrix):
     cols=matrix.shape[1]
     for x in range(0,rows):
         for y in range(0,cols):
-            if matrix[x,y] > 0.7:
+            if matrix[x,y] > 0.6:
                 flag=True
                 break
             else:
@@ -56,8 +56,12 @@ def calculate_scores(tp,m,n):
       n:  no. of tokens in gt
     :return: Precision, Recall and F1 Score
     """
+    if m == 0 or n == 0:
+     return 0, 0, 0
+
     prec=tp/m
     recall= tp/n
+
     if prec==0 and recall==0:
         return 0,0,0
     else:

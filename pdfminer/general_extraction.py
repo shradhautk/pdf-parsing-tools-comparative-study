@@ -20,11 +20,11 @@ et_collated=''
 t_parse = []
 
 #directory of files
-json_list = os.listdir("train/annotations")
+json_list = os.listdir("sample/annotations")
 
 
 for file in json_list:
-  filepath = os.path.join("train/annotations",file)
+  filepath = os.path.join("sample/annotations",file)
   #load ground truth to df
   df1,doc_type = json_to_df(filepath) #type of document-finanacial,scientific etc
   
@@ -36,7 +36,7 @@ for file in json_list:
 
    ## PDF Parsing
   t1 = time.time()
-  filepath = "train/pdfs/" + os.path.splitext(file)[0] + '.pdf'
+  filepath = "sample/pdfs/" + os.path.splitext(file)[0] + '.pdf'
   text = ''
   text = extract_text(filepath)
   t2 = time.time()
@@ -128,7 +128,7 @@ with open('pdfminer/separate_token_score.txt', 'w') as f:
   f.write('Law and Regulations' + '\n' + score_lr + '\n' +  'Number of documents:' + repr(lr_c) + '\n\n')
   f.write('Scientific Articles' + '\n' +score_sa + '\n' + 'Number of documents:' + repr(sa_c) + '\n\n')
   f.write('Manuals' + '\n' + (score_m) + '\n' + 'Number of documents:' + repr(m_c) + '\n\n')
-  f.write('Patents' + '\n' + (score_p) + '\n' + 'Number of documents:' + repr(p_c) + '\n\n')
+  f.write('Patents' + '\n' + str(score_p) + '\n' + 'Number of documents:' + repr(p_c) + '\n\n')
   f.write('Overall Performance' + '\n' + (score_o) + '\n' + 'Number of documents:' + repr(o_c) + '\n\n'
           +'undetected documents:' + repr(undetected_pdfs)+'\n\n')
   f.write('Average time taken to parse 1 file: '+ repr(np.mean(t_parse)))
