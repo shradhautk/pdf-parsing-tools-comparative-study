@@ -12,6 +12,8 @@ The study compares PDF parsing tools for text extraction across document categor
 | `utils/` | Preprocessing and evaluation code |
 | `sample/` | Sample documents and annotations |
 
+This repository contains the seven text-extraction tools listed above. The remaining tools compared in the paper are described in the paper itself.
+
 ## Setup
 
 ```bash
